@@ -1,0 +1,58 @@
+# ------------------------------------------------------------------
+# Python: compiled files and test caches. Python creates these
+# automatically when code runs, so they never need to be saved.
+# ------------------------------------------------------------------
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ------------------------------------------------------------------
+# Virtual environments: each person creates their own on their
+# laptop with `python -m venv venv`. They are large and differ
+# between Windows and Mac, so they must never be committed.
+# ------------------------------------------------------------------
+venv/
+.venv/
+
+# ------------------------------------------------------------------
+# Jupyter: automatic backup copies of notebooks.
+# ------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------
+# Secrets: passwords, tokens and keys live in .env and must never
+# be shared on GitHub.
+# ------------------------------------------------------------------
+.env
+
+# ------------------------------------------------------------------
+# OS files: hidden files created by macOS and Windows.
+# ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------
+# IDE: personal editor settings (VS Code, PyCharm).
+# ------------------------------------------------------------------
+.vscode/
+.idea/
+
+# ------------------------------------------------------------------
+# Logs: pipeline run logs are useful while debugging but change on
+# every run. Ignore everything in logs/ except .gitkeep, so the
+# folder itself still exists after cloning.
+# ------------------------------------------------------------------
+logs/*
+!logs/.gitkeep
+
+# ------------------------------------------------------------------
+# Raw data: the lecturer's files stay out of Git until the tutor
+# confirms we may commit them. Keep .gitkeep so the folder exists.
+# ------------------------------------------------------------------
+data/raw/*
+!data/raw/.gitkeep
+
+# ------------------------------------------------------------------
+# SQLite temp files: created while a database is open.
+# ------------------------------------------------------------------
+*.db-journal
